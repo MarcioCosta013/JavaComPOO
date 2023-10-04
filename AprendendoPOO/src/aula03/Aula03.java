@@ -11,6 +11,7 @@ public class Aula03 {
 		//c1.tampada; --------> o atributo é privado só pode ser modificado por um metodo que está na classe onde ele fo criado.
 		
 		c1.status();
+		
 
 	}
 

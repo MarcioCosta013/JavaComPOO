@@ -18,8 +18,10 @@ public class Caneta {
 	
 	public void rabiscar() {
 		if (this.tampada == true) {
+			
 			System.out.println("ERRO: A caneta está tampada!");
 		} else {
+			
 			System.out.println("Estou Rabiscando");
 		}
 		
