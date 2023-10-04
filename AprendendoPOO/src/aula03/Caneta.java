@@ -20,6 +20,7 @@ public class Caneta {
 		if (this.tampada == true) {
 			
 			System.out.println("ERRO: A caneta está tampada!");
+			
 		} else {
 			
 			System.out.println("Estou Rabiscando");
