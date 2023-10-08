@@ -1,7 +1,7 @@
 //criando classes e objetos
 
 
-package aula2;
+package aula02;
 
 public class Aula02 {
 
