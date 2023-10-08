@@ -5,8 +5,15 @@ package aula04;
 public class Aula04 {
 
 	public static void main(String[] args) {
-		Caneta c1 = new Caneta("BIC"); //Construtor passando um parametro.
+		Caneta c1 = new Caneta("Azul"); //Construtor passando um parametro.
 		c1.status();
+		
+		System.out.println("-----------------------------------------------");
+		System.out.println("O Modelo é: " + c1.getModelo());
+		System.out.println("-----------------------------------------------");
+		
+		c1.setModelo("BIC");
+		System.out.println("O Modelo é: " + c1.getModelo());
 		
 
 	}
