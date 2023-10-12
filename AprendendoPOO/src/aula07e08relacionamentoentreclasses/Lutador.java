@@ -21,7 +21,7 @@ public class Lutador {
 		this.nacionalidade = nacionalidade;
 		this.idade = idade;
 		this.altura = altura;
-		this.peso = peso;
+		this.setPeso(peso); //aqui é usado o 'set' para que possa alterar a categoria sempre que mudar o peso, como programado no setPeso que chama setCategoria.
 		this.vitorias = vitorias;
 		this.derrotas = derrotas;
 		this.empates = empates;
@@ -84,7 +84,7 @@ public class Lutador {
 
 	public void setPeso(float peso) {
 		this.peso = peso;
-		this.setCategoria(peso);
+		this.setCategoria();
 	}
 
 
@@ -95,14 +95,14 @@ public class Lutador {
 
 
 
-	private void setCategoria(float peso2) {
-		if (peso2<52.2) {
+	private void setCategoria() {
+		if (peso<52.2) {
 			this.categoria = "Peso Invalido!";
-		} else if(peso2 <= 70.3) {
+		} else if(peso <= 70.3) {
 			this.categoria = "Leve";
-		} else if(peso2 <= 83.9) {
+		} else if(peso <= 83.9) {
 			this.categoria = "Médio";
-		} else if(peso2 <= 120.2) {
+		} else if(peso <= 120.2) {
 			this.categoria = "Pesado";
 		} else {
 			this.categoria = "Peso Invalido! Mamute...";
@@ -152,7 +152,7 @@ public class Lutador {
 		System.out.println("Lutador: " + this.getNome());
 		System.out.println("Origem: " + this.getNacionalidade());
 		System.out.println(this.getIdade() + " Anos");
-		System.out.println(this.getAltura() + " m de Altura");
+		System.out.println(this.getAltura() + "m de Altura");
 		System.out.println("Pesando " + this.getPeso() + "Kg");
 		System.out.println("Ganhou: " + this.getVitorias());
 		System.out.println("Perdeu: " + this.getDerrotas());
