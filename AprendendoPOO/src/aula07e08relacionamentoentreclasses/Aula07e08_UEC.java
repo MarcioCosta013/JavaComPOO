@@ -1,6 +1,6 @@
 package aula07e08relacionamentoentreclasses;
 
-public class Aula07e08 {
+public class Aula07e08_UEC {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,7 +20,10 @@ public class Aula07e08 {
 		l[5] = new Lutador("Nerdarte", "EUA", 30, 1.81f, 105.7f, 12, 2, 4);
 		
 		
-		l[3].status();
+		Luta UEC01 = new Luta();
+		UEC01.marcarLuta(l[5], l[1]);
+		UEC01.lutar();
+		
 
 	}
 
