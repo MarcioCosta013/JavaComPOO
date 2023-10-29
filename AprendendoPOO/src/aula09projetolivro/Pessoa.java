@@ -4,7 +4,7 @@ public class Pessoa {
 	
 	
 	//construtor
-	public Pessoa(String nome, int idade, boolean sexo) {
+	public Pessoa(String nome, int idade, String sexo) {
 		this.nome = nome;
 		this.idade = idade;
 		this.sexo = sexo;
@@ -13,7 +13,7 @@ public class Pessoa {
 	//Atributos
 	private String nome;
 	private int idade;
-	private boolean sexo;
+	private String sexo;
 	
 	//metodos especiais
 	public String getNome() {
@@ -28,10 +28,10 @@ public class Pessoa {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public boolean isSexo() {
+	public String getSexo() {
 		return sexo;
 	}
-	public void setSexo(boolean sexo) {
+	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
 	

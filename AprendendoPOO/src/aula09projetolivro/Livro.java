@@ -58,10 +58,10 @@ public class Livro implements Publicacao{
 	}
 	
 	//metodos
-	@Override
-	public String toString() {
-		return "Livro (titulo=" + titulo + ", autor=" + autor + ", totPaginas=" + totPaginas + ", pagAtual=" + pagAtual
-				+ ", aberto=" + aberto + ", leitor=" + leitor + ")";
+	
+	public String detalhes() {
+		return "Livro {titulo=" + titulo + ", autor=" + autor + "\n, totPaginas=" + totPaginas + ", pagAtual=" + pagAtual
+				+ ", aberto=" + aberto + "\n, leitor=" + leitor.getNome() + ", Idade=" + leitor.getIdade() + ", Sexo="+ leitor.getSexo() + "}";
 	}
 	
 	//metodos abstratos da interface
@@ -76,7 +76,12 @@ public class Livro implements Publicacao{
 	}
 	@Override
 	public void folhear(int p) {
-		this.pagAtual = p;
+		if (p > this.totPaginas) {
+			this.pagAtual = 0;
+		} else {
+			this.pagAtual = p;
+		}
+		
 	}
 	@Override
 	public void avancarPag() {
