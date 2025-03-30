@@ -1,5 +1,6 @@
+[JAVA_BADGE]:https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white
+
 # Aplicado em Java os conhecimentos de Programação Orientada a Objetos
 
-Conhecimentos em:
-  
-  <img align="center" alt="Marcio-Java" height="80" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+![java][JAVA_BADGE]
+
